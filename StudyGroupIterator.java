@@ -8,7 +8,7 @@ public class StudyGroupIterator implements Iterator<Student> {
     private int index;
     private List<Student> studentList;
 
-    public StudyGroupIterator(List<Student> studentList){
+    public StudyGroupIterator(List<Student> studentList) {
         this.studentList = studentList;
     }
 

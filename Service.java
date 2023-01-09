@@ -15,7 +15,7 @@ public class Service {
         group.addStudent(student);
     }
 
-    // public void sort(){
-    //     Collection.sort(group);
-    // }
+    public void sort(){
+    Collection.sort(group);
+    }
 }
