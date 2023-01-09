@@ -14,6 +14,13 @@ public class Main {
             System.out.println(student);
         }
 
+        System.out.println();
+        service.sort();
+
+        for (Student student : group) {
+            System.out.println(student);
+        }
+
         // Iterator<Student> iterator = group.iterator();
         // while(iterator.hasNext()){
         // Student student = iterator.next();

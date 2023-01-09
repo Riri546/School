@@ -15,7 +15,6 @@ public class Service {
         group.addStudent(student);
     }
 
-
     public void sort() {
         Collections.sort(group.getStudentList());
     }
