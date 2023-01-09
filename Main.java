@@ -16,8 +16,8 @@ public class Main {
 
         // Iterator<Student> iterator = group.iterator();
         // while(iterator.hasNext()){
-        //     Student student = iterator.next();
-        //     System.out.println(student);
+        // Student student = iterator.next();
+        // System.out.println(student);
         // }
     }
 }

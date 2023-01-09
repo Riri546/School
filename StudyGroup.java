@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class StudyGroup implements Iterable<Student>{
+public class StudyGroup implements Iterable<Student> {
     private List<Student> studentList;
 
-    public StudyGroup(){
+    public StudyGroup() {
         studentList = new ArrayList<>();
     }
 
-    public void addStudent(Student student){
+    public void addStudent(Student student) {
         studentList.add(student);
     }
 
     @Override
-    public Iterator<Student> iterator(){
+    public Iterator<Student> iterator() {
         return null;
     }
 
-    class StudyGroupIterator implements Iterator<Student>{
+    class StudyGroupIterator implements Iterator<Student> {
 
         @Override
-        public boolean hasNext(){
+        public boolean hasNext() {
             return false;
         }
 
