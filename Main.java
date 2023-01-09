@@ -3,6 +3,15 @@ package School;
 public class Main {
     public static void main(String[] args) {
         StudyGroup group = new StudyGroup();
-        group.addStudent(new Student(0, null));
+        Service service = new Service(group);
+        service.addStudent("Маша");
+        service.addStudent("Вася");
+        service.addStudent("Петя");
+        service.addStudent("Кирилл");
+        service.addStudent("Даниил");
+
+        for (Student student : group) {
+            System.out.println(student);
+        }
     }
 }
