@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         StudyGroup group = new StudyGroup();
         Service service = new Service(group);
+        
         service.addStudent("Маша");
         service.addStudent("Вася");
         service.addStudent("Петя");
