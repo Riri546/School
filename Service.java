@@ -15,7 +15,11 @@ public class Service {
         group.addStudent(student);
     }
 
-    public void sort() {
+    public void sortByName() {
         Collections.sort(group.getStudentList());
+    }
+
+    public void sortById(){
+        Collections.sort(group.getStudentList(), new StudentComparatorById());
     }
 }
