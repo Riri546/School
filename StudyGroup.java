@@ -17,19 +17,21 @@ public class StudyGroup implements Iterable<Student> {
 
     @Override
     public Iterator<Student> iterator() {
-        return null;
+        return new StudyGroupIterator();
     }
 
     class StudyGroupIterator implements Iterator<Student> {
 
+        private int index;
+
         @Override
         public boolean hasNext() {
-            return false;
+            return index < studentList.size();
         }
 
         @Override
         public Student next() {
-            return null;
+            return studentList.get(index++);
         }
     }
 }
