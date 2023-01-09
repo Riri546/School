@@ -19,4 +19,8 @@ public class StudyGroup implements Iterable<Student> {
     public Iterator<Student> iterator() {
         return new StudyGroupIterator(studentList);
     }
+
+    public List<Student> getStudentList() {
+        return studentList;
+    }
 }

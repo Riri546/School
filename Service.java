@@ -1,6 +1,6 @@
 package School;
 
-import java.util.Collection;
+import java.util.Collections;
 
 public class Service {
     private StudyGroup group;
@@ -15,7 +15,8 @@ public class Service {
         group.addStudent(student);
     }
 
-    public void sort(){
-    Collection.sort(group);
+
+    public void sort() {
+        Collections.sort(group.getStudentList());
     }
 }
