@@ -19,7 +19,7 @@ public class Service {
         Collections.sort(group.getStudentList());
     }
 
-    public void sortById(){
+    public void sortById() {
         Collections.sort(group.getStudentList(), new StudentComparatorById());
     }
 }
