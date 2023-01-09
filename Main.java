@@ -15,7 +15,14 @@ public class Main {
         }
 
         System.out.println();
-        service.sort();
+        service.sortByName();
+
+        for (Student student : group) {
+            System.out.println(student);
+        }
+
+        System.out.println();
+        service.sortById();
 
         for (Student student : group) {
             System.out.println(student);
