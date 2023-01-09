@@ -19,4 +19,17 @@ public class StudyGroup implements Iterable<Student>{
     public Iterator<Student> iterator(){
         return null;
     }
+
+    class StudyGroupIterator implements Iterator<Student>{
+
+        @Override
+        public boolean hasNext(){
+            return false;
+        }
+
+        @Override
+        public Student next() {
+            return null;
+        }
+    }
 }
