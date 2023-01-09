@@ -9,4 +9,8 @@ public class StudyGroup {
     public StudyGroup(){
         studentList = new ArrayList<>();
     }
+
+    public void addStudent(Student student){
+        studentList.add(student);
+    }
 }
