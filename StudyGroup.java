@@ -24,6 +24,4 @@ public class StudyGroup<T extends Student> implements Iterable<T> {
     public Iterator<T> iterator() {
         return new StudyGroupIterator<T>(studentList);
     }
-
-    
 }
