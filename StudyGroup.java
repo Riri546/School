@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class StudyGroup<T extends Test> implements Iterable<T> {
+public class StudyGroup<T extends Student> implements Iterable<T> {
     private List<T> studentList;
 
     public StudyGroup() {
@@ -22,7 +22,7 @@ public class StudyGroup<T extends Test> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new StudyGroupIterator(studentList);
+        return new StudyGroupIterator<T>(studentList);
     }
 
     
