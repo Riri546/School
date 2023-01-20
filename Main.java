@@ -3,7 +3,7 @@ package School;
 public class Main {
     public static void main(String[] args) {
         StudyGroup<Student> group = new StudyGroup<>();
-        Service service = new Service(group);
+        Service<Student> service = new Service<>(group);
         
         service.addStudent("Маша");
         service.addStudent("Вася");

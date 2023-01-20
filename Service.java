@@ -2,16 +2,16 @@ package School;
 
 import java.util.Collections;
 
-public class Service {
-    private StudyGroup group;
+public class Service<T extends Student> {
+    private StudyGroup<T> group;
     private static int id;
 
-    public Service(StudyGroup group) {
+    public Service(StudyGroup<T> group) {
         this.group = group;
     }
 
     public void addStudent(String name) {
-        Student student = new Student(id++, name);
+        T student = (T) new Student(id++, name);
         group.addStudent(student);
     }
 
